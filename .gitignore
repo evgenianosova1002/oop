@@ -1,0 +1,17 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.db
+*.vsidx
+*.vscode/
+*.aps
+*.ncb
+*.sln.docstates
+*.pdb
+*.dll
+*.exe
+*.json
