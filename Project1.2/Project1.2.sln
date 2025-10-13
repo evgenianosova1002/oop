@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1.2", "Project1.2.vcxproj", "{C396678B-48C8-4E20-B382-3C64386D1F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp4", "..\ConsoleApp4\ConsoleApp4.csproj", "{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp5", "..\MauiApp5\MauiApp5.csproj", "{AB411DCC-D568-45AD-B107-E06C0BA81EFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Debug|Any CPU.Build.0 = Debug|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Debug|x64.ActiveCfg = Debug|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Debug|x64.Build.0 = Debug|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Debug|x86.ActiveCfg = Debug|Win32
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Debug|x86.Build.0 = Debug|Win32
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Release|Any CPU.ActiveCfg = Release|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Release|Any CPU.Build.0 = Release|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Release|x64.ActiveCfg = Release|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Release|x64.Build.0 = Release|x64
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Release|x86.ActiveCfg = Release|Win32
+		{C396678B-48C8-4E20-B382-3C64386D1F74}.Release|x86.Build.0 = Release|Win32
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Debug|x64.Build.0 = Debug|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Debug|x86.Build.0 = Debug|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Release|x64.ActiveCfg = Release|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Release|x64.Build.0 = Release|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Release|x86.ActiveCfg = Release|Any CPU
+		{64008220-1C0C-4CF7-9DC3-9325A59ABAAD}.Release|x86.Build.0 = Release|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Debug|x64.Build.0 = Debug|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Debug|x86.Build.0 = Debug|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Release|x64.ActiveCfg = Release|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Release|x64.Build.0 = Release|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB411DCC-D568-45AD-B107-E06C0BA81EFC}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B834FC20-7FDB-4B43-9617-6C7153502A4C}
+	EndGlobalSection
+EndGlobal
