@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<book id="1"
+	      faculty="Faculty of Computer Science"
+	      department="Department of Computer Science"
+	      qualification="Educational publication"
+	      forReaders="Students"
+	      position="Lecturer">
+		<author>Ivan Ivanenko</author>
+		<title>Programming in C#</title>
+		<annotation>Guide for university students</annotation>
+	</book>
+
+	<book id="2"
+	      faculty="Faculty of Computer Science"
+	      department="Department of Software Engineering"
+	      qualification="Educational publication"
+	      forReaders="First-year students"
+	      position="Associate Professor">
+		<author>Petro Petrenko</author>
+		<title>Object-Oriented Programming</title>
+		<annotation>Textbook with practical C++ examples</annotation>
+	</book>
+
+	<book id="3"
+	      faculty="Faculty of Computer Science"
+	      department="Department of AI Systems"
+	      qualification="Scientific publication"
+	      forReaders="Researchers"
+	      position="Professor">
+		<author>Olha Marchenko</author>
+		<title>Introduction to Artificial Intelligence</title>
+		<annotation>Comprehensive guide to AI and neural networks</annotation>
+	</book>
+
+	<book id="4"
+	      faculty="Faculty of Mathematics"
+	      department="Department of Algebra and Geometry"
+	      qualification="Educational publication"
+	      forReaders="Students"
+	      position="Assistant">
+		<author>Andriy Kovalenko</author>
+		<title>Linear Algebra Essentials</title>
+		<annotation>Fundamentals of vectors, matrices and transformations</annotation>
+	</book>
+
+	<book id="5"
+	      faculty="Faculty of Mathematics"
+	      department="Department of Statistics"
+	      qualification="Educational publication"
+	      forReaders="Students"
+	      position="Lecturer">
+		<author>Kateryna Melnyk</author>
+		<title>Probability and Statistics</title>
+		<annotation>Introductory course with solved examples</annotation>
+	</book>
+
+	<book id="6"
+	      faculty="Faculty of Physics"
+	      department="Department of Theoretical Physics"
+	      qualification="Scientific publication"
+	      forReaders="Researchers"
+	      position="Professor">
+		<author>Olena Shevchenko</author>
+		<title>Modern Physics for Beginners</title>
+		<annotation>Quantum mechanics explained simply</annotation>
+	</book>
+
+	<book id="7"
+	      faculty="Faculty of Physics"
+	      department="Department of Optics"
+	      qualification="Educational publication"
+	      forReaders="Graduate students"
+	      position="Senior Lecturer">
+		<author>Taras Bondarenko</author>
+		<title>Wave Optics and Lasers</title>
+		<annotation>Study of interference and diffraction phenomena</annotation>
+	</book>
+
+	<book id="8"
+	      faculty="Faculty of Cybernetics"
+	      department="Department of Information Systems"
+	      qualification="Scientific publication"
+	      forReaders="Graduate students"
+	      position="Senior Lecturer">
+		<author>Maryna Danylenko</author>
+		<title>Data Analysis with Python</title>
+		<annotation>Practical guide to data science</annotation>
+	</book>
+
+	<book id="9"
+	      faculty="Faculty of Cybernetics"
+	      department="Department of Control Theory"
+	      qualification="Scientific publication"
+	      forReaders="Researchers"
+	      position="Professor">
+		<author>Yuriy Stepanov</author>
+		<title>Control Systems Theory</title>
+		<annotation>Automatic regulation and feedback systems</annotation>
+	</book>
+
+	<book id="10"
+	      faculty="Faculty of Mechanics"
+	      department="Department of Applied Mechanics"
+	      qualification="Educational publication"
+	      forReaders="Students"
+	      position="Lecturer">
+		<author>Vitalii Sydorenko</author>
+		<title>Fundamentals of Mechanics</title>
+		<annotation>Basic laws of motion and equilibrium</annotation>
+	</book>
+
+	<book id="11"
+	      faculty="Faculty of Mechanics"
+	      department="Department of Robotics"
+	      qualification="Scientific publication"
+	      forReaders="Graduate students"
+	      position="Associate Professor">
+		<author>Iryna Dovhan</author>
+		<title>Industrial Robotics</title>
+		<annotation>Design and programming of robotic systems</annotation>
+	</book>
+
+	<book id="12"
+	      faculty="Faculty of Informatics"
+	      department="Department of Cybersecurity"
+	      qualification="Scientific publication"
+	      forReaders="Researchers"
+	      position="Professor">
+		<author>Serhii Kravchenko</author>
+		<title>Network Security and Cryptography</title>
+		<annotation>Principles of secure communication and encryption</annotation>
+	</book>
+</library>

@@ -1,0 +1,68 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab2_Library.MainPage"
+             Title="Department Library">
+
+    <Grid RowDefinitions="Auto,*" ColumnDefinitions="*">
+
+        <VerticalStackLayout Padding="20" Spacing="15" Grid.Row="0">
+            <Label Text="Library XML Analysis"
+                   FontSize="22"
+                   HorizontalOptions="Center"/>
+
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Select XML File"
+                        x:Name="XmlButton"
+                        Clicked="OnSelectXmlClicked"
+                        HorizontalOptions="FillAndExpand"/>
+
+                <Button Text="Select XSL File"
+                        x:Name="XslButton"
+                        Clicked="OnSelectXslClicked"
+                        HorizontalOptions="FillAndExpand"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <Grid Grid.Row="1"
+              ColumnDefinitions="2*,3*"
+              RowDefinitions="*"
+              Padding="20"
+              ColumnSpacing="20">
+
+            <VerticalStackLayout Grid.Column="0" Spacing="15">
+                <Label Text="Select attribute for search:" FontSize="16"/>
+
+                <Picker x:Name="AttributePicker"
+                        Title="Choose XML attribute"/>
+
+                <Entry x:Name="SearchEntry"
+                       Placeholder="Enter value to search..."/>
+
+                <Label Text="Choose parser method" FontSize="16"/>
+
+                <Picker x:Name="ParserPicker" Title="Select parser method">
+                    <Picker.Items>
+                        <x:String>SAX</x:String>
+                        <x:String>DOM</x:String>
+                        <x:String>LINQ</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Button Text="Parse XML" Clicked="OnParseClicked"/>
+                <Button Text="Transform to HTML" Clicked="OnTransformClicked"/>
+                <Button Text="Clear" Clicked="OnClearClicked"/>
+                <Button Text="Exit" Clicked="OnExitClicked"/>
+            </VerticalStackLayout>
+
+            <Frame Grid.Column="1"
+                   CornerRadius="10"
+                   Padding="10">
+                <ScrollView>
+                    <Label x:Name="OutputLabel"
+                           FontSize="14"
+                           LineBreakMode="WordWrap"/>
+                </ScrollView>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>
