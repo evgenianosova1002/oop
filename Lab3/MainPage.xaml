@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Lab3.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="JSON Library">
+
+    <Grid Padding="20" RowDefinitions="Auto, Auto, *" RowSpacing="20">
+
+        <Label
+            Grid.Row="0"
+            Text="JSON Library Manager"
+            FontSize="32"
+            FontAttributes="Bold"
+            TextColor="White" />
+
+        <HorizontalStackLayout Grid.Row="1" Spacing="10">
+            <Button x:Name="OpenJsonButton"
+                    Text="Open library"
+                    Clicked="OpenJsonButton_Clicked" />
+
+            <Button x:Name="SaveButton"
+                    Text="Save changes"
+                    IsEnabled="False"
+                    Clicked="SaveButton_Clicked" />
+
+            <Button x:Name="AddBookButton"
+                    Text="Add book"
+                    IsEnabled="False"
+                    Clicked="AddBookButton_Clicked" />
+
+            <Button x:Name="EditBookButton"
+                    Text="Edit book"
+                    IsEnabled="False"
+                    Clicked="EditBookButton_Clicked" />
+
+            <Button x:Name="DeleteBookButton"
+                    Text="Delete book"
+                    IsEnabled="False"
+                    Clicked="DeleteBookButton_Clicked" />
+
+            <Button x:Name="AboutButton"
+                    Text="About app"
+                    Clicked="AboutButton_Clicked" />
+        </HorizontalStackLayout>
+
+        <Grid Grid.Row="2" ColumnDefinitions="1*,4*" ColumnSpacing="20">
+
+            <Frame Grid.Column="0" Padding="15" CornerRadius="15" BackgroundColor="#222">
+                <VerticalStackLayout Spacing="12">
+
+                    <Label Text="Search books"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="White" />
+
+                    <Label Text="Title contains:" FontSize="12" TextColor="White" />
+                    <Entry x:Name="TitleFilterEntry"
+                           Placeholder="e.g. The Hobbit" />
+
+                    <Label Text="Author contains:" FontSize="12" TextColor="White" />
+                    <Entry x:Name="AuthorFilterEntry"
+                           Placeholder="e.g. Багряний" />
+
+                    <Label Text="Year ≥" FontSize="12" TextColor="White" />
+                    <Entry x:Name="YearFromEntry"
+                           Placeholder="e.g. 1900"
+                           Keyboard="Numeric" />
+
+                    <HorizontalStackLayout Spacing="10" Margin="0,10,0,0">
+                        <Button x:Name="SearchButton"
+                                Text="Search"
+                                IsEnabled="False"
+                                Clicked="SearchButton_Clicked" />
+                        <Button x:Name="ClearSearchButton"
+                                Text="Clear"
+                                IsEnabled="False"
+                                Clicked="ClearSearchButton_Clicked" />
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame Grid.Column="1" Padding="15" CornerRadius="15" BackgroundColor="#111">
+                <ScrollView>
+                    <VerticalStackLayout x:Name="BooksPanel" Spacing="10" />
+                </ScrollView>
+            </Frame>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

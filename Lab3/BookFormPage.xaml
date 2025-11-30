@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Lab3.BookFormPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Book">
+
+	<ScrollView>
+		<VerticalStackLayout Padding="20" Spacing="12">
+
+			<Label Text="Title:" />
+			<Entry x:Name="TitleEntry" Placeholder="enter title" />
+
+			<Label Text="Author:" />
+			<Entry x:Name="AuthorEntry" Placeholder="enter author" />
+
+			<Label Text="Year:" />
+			<Entry x:Name="YearEntry" Keyboard="Numeric" Placeholder="enter year" />
+
+			<Label Text="Genre:" />
+			<Entry x:Name="GenreEntry" Placeholder="enter genre" />
+
+			<HorizontalStackLayout Spacing="10" Margin="0,10,0,0">
+				<Label Text="Available:" VerticalOptions="Center" />
+				<Switch x:Name="AvailableSwitch" />
+			</HorizontalStackLayout>
+
+			<HorizontalStackLayout Spacing="10" Margin="0,20,0,0">
+				<Button Text="Save" Clicked="SaveButton_Clicked" />
+				<Button Text="Cancel" Clicked="CancelButton_Clicked" />
+			</HorizontalStackLayout>
+
+		</VerticalStackLayout>
+	</ScrollView>
+</ContentPage>
