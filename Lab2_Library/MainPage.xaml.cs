@@ -1,6 +1,8 @@
 ﻿using Lab2_Library.Services;
 using System.Xml;
 using System.Xml.Xsl;
+using System.Xml.Linq;
+
 
 namespace Lab2_Library;
 
@@ -122,9 +124,38 @@ public partial class MainPage : ContentPage
                 return;
             }
 
+            string attribute = AttributePicker.SelectedItem?.ToString() ?? "";
+            string search = SearchEntry.Text ?? "";
+
+            if (string.IsNullOrEmpty(attribute))
+            {
+                DisplayAlert("Error", "Please choose an attribute for search.", "OK");
+                return;
+            }
+
+            var doc = XDocument.Load(xmlPath);
+
+            var filtered = new XDocument(
+                new XElement("library",
+                    from b in doc.Root!.Elements("book")
+                    let attr = (string?)b.Attribute(attribute)
+                    where attr != null &&
+                          attr.Contains(search, StringComparison.OrdinalIgnoreCase)
+                    select new XElement("book",
+                        b.Attributes(),
+                        b.Elements()
+                    )
+                )
+            );
+
             var xslt = new XslCompiledTransform();
             xslt.Load(xslPath);
-            xslt.Transform(xmlPath, htmlOutput);
+
+            using var reader = filtered.CreateReader();
+
+            using var writer = XmlWriter.Create(htmlOutput);
+            xslt.Transform(reader, writer);
+
             DisplayAlert("Success", $"HTML created: {htmlOutput}", "OK");
         }
         catch (Exception ex)
@@ -132,6 +163,8 @@ public partial class MainPage : ContentPage
             DisplayAlert("Error", ex.Message, "OK");
         }
     }
+
+
 
     private void OnClearClicked(object sender, EventArgs e)
     {
